@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>mx.edu.utez.ads/mx.edu.utez.ads.HelloApplication</mainClass>
+                            <mainClass>mx.edu.utez.ads/mx.edu.utez.ads.Main</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
