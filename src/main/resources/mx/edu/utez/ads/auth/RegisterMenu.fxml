@@ -1,14 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="mx.edu.utez.ads.controllers.auth.RegisterMenuController"
-            prefHeight="400.0" prefWidth="600.0">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #E6F3F0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
 
-</AnchorPane>
+    <top>
+        <AnchorPane style="-fx-background-color: #1A533D;">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+            <children>
+                <ImageView fitHeight="94.0" fitWidth="366.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+                    <image>
+                        <Image url="@../assets/Logo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </top>
+
+    <left>
+        <VBox prefWidth="250.0" spacing="10.0" style="-fx-background-color: #E6F3F0;">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+            </padding>
+            <children>
+                <Label style="-fx-text-fill: #3D5C4A; -fx-font-weight: bold;" text="Categorías">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </Label>
+
+                <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="210.0" style="-fx-background-color: #287D5D; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 8;" text="Bebidas Calientes">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+
+                <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="210.0" style="-fx-background-color: #B3D9C9; -fx-text-fill: #3D5C4A; -fx-font-weight: bold; -fx-background-radius: 8;" text="Bebidas Frías">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="210.0" style="-fx-background-color: #B3D9C9; -fx-text-fill: #3D5C4A; -fx-font-weight: bold; -fx-background-radius: 8;" text="Postres">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="210.0" style="-fx-background-color: #B3D9C9; -fx-text-fill: #3D5C4A; -fx-font-weight: bold; -fx-background-radius: 8;" text="Snacks">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </left>
+
+    <center>
+        <ScrollPane fitToWidth="true" hbarPolicy="NEVER" style="-fx-background-color: transparent; -fx-background: transparent;" vbarPolicy="AS_NEEDED">
+            <padding>
+                <Insets bottom="20.0" left="10.0" right="20.0" top="10.0" />
+            </padding>
+            <content>
+                <VBox spacing="20.0" style="-fx-background-color: transparent;">
+                    <children>
+
+                        <AnchorPane style="-fx-background-color: #B3D9C9; -fx-border-color: #3D5C4A; -fx-border-width: 1.5; -fx-border-radius: 5; -fx-background-radius: 5;">
+                            <children>
+                                <VBox spacing="5.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                    <children>
+                                        <StackPane style="-fx-background-color: #1A533D; -fx-background-radius: 5;">
+                                            <children>
+                                                <Label style="-fx-text-fill: #FFFFFF; -fx-font-weight: bold;" text="Espresso">
+                                                    <font>
+                                                        <Font name="Arial Black" size="60.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets bottom="10.0" top="10.0" />
+                                                    </padding>
+                                                </Label>
+                                            </children>
+                                        </StackPane>
+                                        <Label style="-fx-text-fill: #3D5C4A; -fx-font-weight: bold;" text="Espresso">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets top="10.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <Label style="-fx-text-fill: #3D5C4A;" text="Café concentrado y aromático, perfecto para despertar tus sentidos">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label style="-fx-text-fill: #3D5C4A; -fx-font-weight: bold;" text="\$3.50">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets top="15.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                    </children>
+                                </VBox>
+                                <Button layoutX="621.0" layoutY="210.0" mnemonicParsing="false" style="-fx-background-color: #287D5D; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 5;" text="Agregar" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                                    <font>
+                                        <Font size="13.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+
+                        <AnchorPane style="-fx-background-color: #B3D9C9; -fx-border-color: #3D5C4A; -fx-border-width: 1.5; -fx-border-radius: 5; -fx-background-radius: 5;">
+                            <children>
+                                <VBox spacing="5.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                    <children>
+                                        <StackPane style="-fx-background-color: #1A533D; -fx-background-radius: 5;">
+                                            <children>
+                                                <Label style="-fx-text-fill: #FFFFFF; -fx-font-weight: bold;" text="Cappuccino">
+                                                    <font>
+                                                        <Font name="Arial Black" size="60.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets bottom="10.0" top="10.0" />
+                                                    </padding>
+                                                </Label>
+                                            </children>
+                                        </StackPane>
+                                        <Label style="-fx-text-fill: #3D5C4A; -fx-font-weight: bold;" text="Cappuccino">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets top="10.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <Label style="-fx-text-fill: #3D5C4A;" text="Espresso con leche vaporizada y espuma cremosa">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label style="-fx-text-fill: #3D5C4A; -fx-font-weight: bold;" text="\$4.25">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets top="15.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                    </children>
+                                </VBox>
+                                <Button layoutX="621.0" layoutY="210.0" mnemonicParsing="false" style="-fx-background-color: #287D5D; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 5;" text="Agregar" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                                    <font>
+                                        <Font size="13.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+
+                        <AnchorPane style="-fx-background-color: #B3D9C9; -fx-border-color: #3D5C4A; -fx-border-width: 1.5; -fx-border-radius: 5; -fx-background-radius: 5;">
+                            <children>
+                                <VBox spacing="5.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                    <children>
+                                        <StackPane style="-fx-background-color: #1A533D; -fx-background-radius: 5;">
+                                            <children>
+                                                <Label style="-fx-text-fill: #FFFFFF; -fx-font-weight: bold;" text="Latte">
+                                                    <font>
+                                                        <Font name="Arial Black" size="60.0" />
+                                                    </font>
+                                                    <padding>
+                                                        <Insets bottom="10.0" top="10.0" />
+                                                    </padding>
+                                                </Label>
+                                            </children>
+                                        </StackPane>
+                                        <Label style="-fx-text-fill: #3D5C4A; -fx-font-weight: bold;" text="Latte">
+                                            <font>
+                                                <Font size="18.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets top="10.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                        <Label style="-fx-text-fill: #3D5C4A;" text="Espresso con más leche vaporizada y una capa ligera de espuma.">
+                                            <font>
+                                                <Font size="14.0" />
+                                            </font>
+                                        </Label>
+                                        <Label style="-fx-text-fill: #3D5C4A; -fx-font-weight: bold;" text="\$4.25">
+                                            <font>
+                                                <Font size="16.0" />
+                                            </font>
+                                            <VBox.margin>
+                                                <Insets top="15.0" />
+                                            </VBox.margin>
+                                        </Label>
+                                    </children>
+                                </VBox>
+                                <Button layoutX="621.0" layoutY="210.0" mnemonicParsing="false" style="-fx-background-color: #287D5D; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 5;" text="Agregar" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                                    <font>
+                                        <Font size="13.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>
