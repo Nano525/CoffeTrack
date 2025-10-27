@@ -11,15 +11,15 @@
          <children>
             <ImageView fitHeight="314.0" fitWidth="313.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Images/CafeLogin.jpg" />
+                  <Image url="@../assets/CafeLogin.jpg" />
                </image>
             </ImageView>
-            <ImageView fitHeight="62.0" fitWidth="236.0" layoutX="315.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="62.0" fitWidth="177.0" layoutX="315.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Images/LogoLogin.png" />
+                  <Image url="@../assets/LogoNegro.png" />
                </image>
             </ImageView>
-            <VBox layoutX="307.0" layoutY="95.0" prefHeight="172.0" prefWidth="167.0" alignment="CENTER">
+            <VBox alignment="CENTER" layoutX="307.0" layoutY="95.0" prefHeight="172.0" prefWidth="167.0">
                <children>
                   <Label alignment="CENTER" prefHeight="15.0" prefWidth="179.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #4f4a46;" text="Inicio de sesión" />
                   <Label />

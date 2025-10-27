@@ -9,12 +9,12 @@
     <Pane layoutX="35.0" layoutY="40.0" prefHeight="320.0" prefWidth="527.0" style="-fx-border-color: #4f4a46; -fx-border-width: 1px;">
         <ImageView fitHeight="314.0" fitWidth="313.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../Images/Login.jpg" />
+                <Image url="@../assets/Login.jpg" />
             </image>
         </ImageView>
-        <ImageView fitHeight="62.0" fitWidth="236.0" layoutX="315.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="62.0" fitWidth="161.0" layoutX="315.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../Images/LogoLogin.png" />
+                <Image url="@../assets/LogoNegro.png" />
             </image>
         </ImageView>
         <VBox alignment="TOP_CENTER" layoutX="287.0" layoutY="66.0" prefHeight="349.0" prefWidth="208.0">
