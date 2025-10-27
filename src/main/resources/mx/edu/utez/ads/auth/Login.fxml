@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FCF6E8;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.edu.utez.ads.controllers.auth.LoginController">
+   <children>
+      <Pane layoutX="35.0" layoutY="40.0" prefHeight="320.0" prefWidth="527.0" style="-fx-border-color: #4f4a46;              -fx-border-width: 1px;">
+         <children>
+            <ImageView fitHeight="314.0" fitWidth="313.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/CafeLogin.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="62.0" fitWidth="236.0" layoutX="315.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/LogoLogin.png" />
+               </image>
+            </ImageView>
+            <VBox layoutX="307.0" layoutY="95.0" prefHeight="172.0" prefWidth="167.0" alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="15.0" prefWidth="179.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #4f4a46;" text="Inicio de sesión" />
+                  <Label />
+                  <TextField promptText="Correo electronico">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets></TextField>
+                  <Label />
+                  <PasswordField promptText="Contraseña" />
+                  <Label />
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #577A31; -fx-text-fill: white; -fx-font-weight: bold" text="Iniciar sesion" />
+               </children>
+            </VBox>
+         </children></Pane>
+   </children>
+</AnchorPane>
