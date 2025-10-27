@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FCF6E8;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.edu.utez.ads.auth.RegistrationController">
+    <Pane layoutX="35.0" layoutY="40.0" prefHeight="320.0" prefWidth="527.0" style="-fx-border-color: #4f4a46; -fx-border-width: 1px;">
+        <ImageView fitHeight="314.0" fitWidth="313.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/Login.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="62.0" fitWidth="236.0" layoutX="315.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Images/LogoLogin.png" />
+            </image>
+        </ImageView>
+        <VBox alignment="TOP_CENTER" layoutX="287.0" layoutY="66.0" prefHeight="349.0" prefWidth="208.0">
+            <Label alignment="TOP_CENTER" prefHeight="15.0" prefWidth="179.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #4f4a46;" text="Registrar" />
+            <Label />
+            <TextField promptText="Nombre completo">
+                <opaqueInsets>
+                    <Insets />
+                </opaqueInsets></TextField>
+         <Label prefHeight="0.0" prefWidth="16.0" />
+            <TextField promptText="Correo electronico">
+                <opaqueInsets>
+                    <Insets />
+                </opaqueInsets></TextField>
+            <Label prefHeight="0.0" prefWidth="16.0" />
+            <TextField promptText="Nombre de usuario">
+                <opaqueInsets>
+                    <Insets />
+                </opaqueInsets></TextField>
+         <Label />
+         <HBox prefHeight="26.0" prefWidth="208.0">
+            <children>
+               <SplitMenuButton mnemonicParsing="false" prefHeight="26.0" prefWidth="138.0" text="Rol">
+                 <items>
+                   <MenuItem mnemonicParsing="false" text="Mesero" />
+                   <MenuItem mnemonicParsing="false" text="Cocinero" />
+                     <MenuItem mnemonicParsing="false" text="Administrador" />
+                 </items>
+               </SplitMenuButton>
+               <TextField />
+            </children></HBox>
+         <Label />
+            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #577A31; -fx-text-fill: white; -fx-font-weight: bold" text="Registro" />
+        </VBox>
+    </Pane>
+</AnchorPane>
