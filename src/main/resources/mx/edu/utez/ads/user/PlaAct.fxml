@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="mx.edu.utez.ads.controllers.user.PlaActController">
+
+    <!-- ENCABEZADO SUPERIOR -->
+    <top>
+        <HBox spacing="20" alignment="CENTER_LEFT" style="-fx-background-color: #2d2b29; -fx-padding: 10 20;">
+            <ImageView fitHeight="50" fitWidth="50">
+                <Image url="@../assets/logoBlanco.png"/> <!-- coloca aquí tu imagen del logo -->
+            </ImageView>
+
+            <Label text="COFFEE TRACK" textFill="white" style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+            <Pane HBox.hgrow="ALWAYS" />
+
+            <TextField promptText="Buscar" style="-fx-background-radius: 8; -fx-pref-width: 250;"/>
+        </HBox>
+    </top>
+
+    <!-- CUERPO PRINCIPAL -->
+    <center>
+        <HBox spacing="30" style="-fx-padding: 30;">
+            <!-- SECCIÓN IZQUIERDA (LISTA DE PEDIDOS) -->
+            <VBox spacing="15" HBox.hgrow="ALWAYS">
+                <Label text="Pedidos" style="-fx-font-size: 28px; -fx-font-weight: bold;"/>
+
+                <TableView fx:id="tblPedidos" prefWidth="500">
+                    <columns>
+                        <TableColumn fx:id="colId" text="ID" prefWidth="60"/>
+                        <TableColumn fx:id="colCliente" text="Cliente" prefWidth="120"/>
+                        <TableColumn fx:id="colProductos" text="Productos" prefWidth="150"/>
+                        <TableColumn fx:id="colEstado" text="Estado" prefWidth="100"/>
+                        <TableColumn fx:id="colTotal" text="Total" prefWidth="70"/>
+                    </columns>
+                </TableView>
+
+                <Button text="Nuevo Pedido"
+                        style="-fx-background-color: #2d2b29; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;"
+                        prefWidth="150" />
+            </VBox>
+
+            <!-- SECCIÓN DERECHA (DETALLES DEL PEDIDO) -->
+            <VBox spacing="15" alignment="TOP_CENTER"
+                  style="-fx-background-color: #d9d9d9; -fx-padding: 25; -fx-background-radius: 10;"
+                  prefWidth="300">
+
+                <Label fx:id="lblPedido" text="Pedido 0016" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                <Label fx:id="lblCliente" text="Jose Morales" style="-fx-font-size: 16px;"/>
+                <Label fx:id="lblEstado" text="En preparación" style="-fx-text-fill: #0055cc;"/>
+
+                <Separator prefWidth="200"/>
+
+                <GridPane hgap="20" vgap="10">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="LEFT" prefWidth="150"/>
+                        <ColumnConstraints halignment="RIGHT" prefWidth="80"/>
+                    </columnConstraints>
+
+                    <Label text="Expresso" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                    <Label text="$55.00" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                    <Label text="Concha" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                    <Label text="$10.00" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                    <Separator GridPane.rowIndex="2" GridPane.columnSpan="2"/>
+
+                    <Label text="Total:" GridPane.rowIndex="3" GridPane.columnIndex="0" style="-fx-font-weight: bold;"/>
+                    <Label text="$65.00" GridPane.rowIndex="3" GridPane.columnIndex="1" style="-fx-font-weight: bold;"/>
+                </GridPane>
+
+                <HBox spacing="15" alignment="CENTER">
+                    <Button text="Listo" style="-fx-background-color: #333; -fx-text-fill: white; -fx-background-radius: 5;" prefWidth="80"/>
+                    <Button text="Cancelar" style="-fx-background-color: #333; -fx-text-fill: white; -fx-background-radius: 5;" prefWidth="80"/>
+                </HBox>
+            </VBox>
+        </HBox>
+    </center>
+
+    <!-- PIE DE PÁGINA -->
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" style="-fx-background-color: #e0e0e0; -fx-padding: 5 20;">
+            <Label text="Cuatro pedidos Activos: Última actualización a las 11:20 a.m"
+                   style="-fx-text-fill: #444; -fx-font-size: 12px;"/>
+        </HBox>
+    </bottom>
+</BorderPane>
