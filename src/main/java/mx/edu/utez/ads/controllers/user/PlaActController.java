@@ -98,9 +98,11 @@ public class PlaActController {
             return cliente.get();
         }
         public String getProductos() {
+
             return productos.get();
         }
         public String getEstado() {
+
             return estado.get();
         }
         public String getTotal() {
@@ -112,18 +114,23 @@ public class PlaActController {
         }
 
         public javafx.beans.property.StringProperty idProperty() {
+
             return id;
         }
         public javafx.beans.property.StringProperty clienteProperty() {
+
             return cliente;
         }
         public javafx.beans.property.StringProperty productosProperty() {
+
             return productos;
         }
         public javafx.beans.property.StringProperty estadoProperty() {
+
             return estado;
         }
         public javafx.beans.property.StringProperty totalProperty() {
+
             return total;
         }
     }
