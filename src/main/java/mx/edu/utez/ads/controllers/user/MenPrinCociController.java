@@ -2,6 +2,7 @@ package mx.edu.utez.ads.controllers.user;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 public class MenPrinCociController {
 
@@ -12,28 +13,33 @@ public class MenPrinCociController {
 
     @FXML
     private void initialize() {
-        // Aquí puedes agregar inicializaciones si es necesario
+        // Inicialización del controlador
     }
 
     @FXML
     private void onPedidosActuales() {
         System.out.println("Mostrando pedidos actuales...");
-        // Cambiar a la vista de pedidos actuales
+        // TODO: Cambiar a la vista de pedidos actuales cuando se cree
+        // WindowUtils.switchWindow(btnPedidosActuales, "/mx/edu/utez/ads/user/PedidosActuales.fxml", "Pedidos Actuales");
     }
 
     @FXML
     private void onPedidosListos() {
         System.out.println("Mostrando pedidos listos...");
+        // TODO: Cambiar a la vista de pedidos listos cuando se cree
+        // WindowUtils.switchWindow(btnPedidosListos, "/mx/edu/utez/ads/user/PedidosListos.fxml", "Pedidos Listos");
     }
 
     @FXML
     private void onPedidosCancelados() {
         System.out.println("Mostrando pedidos cancelados...");
+        // TODO: Cambiar a la vista de pedidos cancelados cuando se cree
+        // WindowUtils.switchWindow(btnPedidosCancelados, "/mx/edu/utez/ads/user/PedidosCancelados.fxml", "Pedidos Cancelados");
     }
 
     @FXML
     private void onSalir() {
-        System.out.println("Saliendo de la aplicación...");
-        System.exit(0);
+        Stage stage = (Stage) btnSalir.getScene().getWindow();
+        stage.close();
     }
 }

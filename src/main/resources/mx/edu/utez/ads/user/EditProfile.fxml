@@ -2,45 +2,41 @@
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #E6F3F0;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
 
     <top>
-        <AnchorPane style="-fx-background-color: #8B4513;">
+        <AnchorPane style="-fx-background-color: #3A1D08;">
             <padding>
                 <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
             </padding>
             <children>
-                <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #556B2F; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 5;" text="LOGO" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="15.0">
-                    <font>
-                        <Font size="16.0" />
-                    </font>
-                </Button>
-                <Label style="-fx-text-fill: #FFFFFF; -fx-font-weight: bold;" text="Sistema de Empleados" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="25.0">
-                    <font>
-                        <Font size="24.0" />
-                    </font>
-                </Label>
+                <ImageView fitHeight="60" fitWidth="400.0" layoutY="32.0">
+                    <image>
+                        <Image url="@../assets/LogoBlanco.png" />
+                    </image> <!-- Logo sin texto -->
+                </ImageView>
             </children>
         </AnchorPane>
     </top>
 
     <center>
-        <AnchorPane style="-fx-background-color: #D3D3D3;">
+        <AnchorPane style="-fx-background-color: #E6F3F0;">
             <padding>
                 <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
             </padding>
             <children>
                 <!-- Panel principal del perfil -->
-                <AnchorPane prefHeight="600.0" prefWidth="960.0" style="-fx-background-color: #D3D3D3; -fx-border-color: #000000; -fx-border-width: 1; -fx-border-radius: 10; -fx-background-radius: 10;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                <AnchorPane prefHeight="600.0" prefWidth="960.0" style="-fx-background-color: #F0FFF0; -fx-border-color: #3D5C4A; -fx-border-width: 1; -fx-border-radius: 10; -fx-background-radius: 10;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
                     <padding>
                         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                     </padding>
                     <children>
                         <!-- Título del perfil -->
-                        <Label style="-fx-text-fill: #000000; -fx-font-weight: bold;" text="Perfil del Empleado" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                        <Label style="-fx-text-fill: #3D5C4A; -fx-font-weight: bold;" text="Perfil del Empleado" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
                             <font>
                                 <Font size="28.0" />
                             </font>
@@ -54,21 +50,21 @@
                         </Button>
 
                         <!-- Columna izquierda - Información básica -->
-                        <VBox prefWidth="300.0" spacing="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="80.0">
+                        <VBox layoutX="83.0" layoutY="143.0" prefHeight="330.0" prefWidth="185.0" spacing="20.0" AnchorPane.bottomAnchor="62.0" AnchorPane.leftAnchor="62.0" AnchorPane.topAnchor="122.0">
                             <children>
                                 <!-- Foto de perfil circular -->
-                                <StackPane prefHeight="150.0" prefWidth="217.0" style="-fx-background-color: #556B2F; -fx-background-radius: 75;">
+                                <StackPane prefHeight="150.0" prefWidth="222.0" style="-fx-background-color: #556B2F; -fx-background-radius: 75;">
                                     <children>
-                                        <Label style="-fx-text-fill: #FFFFFF; -fx-font-weight: bold;" text="CM">
+                                        <Label style="-fx-text-fill: #FFFFFF; -fx-font-weight: bold;" text="CM" textAlignment="CENTER">
                                             <font>
                                                 <Font size="48.0" />
                                             </font>
                                         </Label>
                                     </children>
                                 </StackPane>
-                                
+
                                 <!-- Nombre del empleado -->
-                                <Label style="-fx-text-fill: #000000; -fx-font-weight: bold;" text="Carlos Mendoza">
+                                <Label style="-fx-text-fill: #3D5C4A; -fx-font-weight: bold;" text="Carlos Mendoza">
                                     <font>
                                         <Font size="20.0" />
                                     </font>
@@ -76,14 +72,14 @@
                                         <Insets top="10.0" />
                                     </VBox.margin>
                                 </Label>
-                                
+
                                 <!-- Posición -->
-                                <Label style="-fx-text-fill: #000000;" text="Mesero Senior">
+                                <Label style="-fx-text-fill: #3D5C4A;" text="Mesero Senior">
                                     <font>
                                         <Font size="16.0" />
                                     </font>
                                 </Label>
-                                
+
                                 <!-- Indicador de turno -->
                                 <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #556B2F; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 5;" text="Turno: Mañana">
                                     <font>
@@ -102,12 +98,12 @@
                                 <!-- Nombre Completo -->
                                 <VBox spacing="5.0">
                                     <children>
-                                        <Label style="-fx-text-fill: #000000; -fx-font-weight: bold;" text="Nombre Completo">
+                                        <Label style="-fx-text-fill: #3D5C4A; -fx-font-weight: bold;" text="Nombre Completo">
                                             <font>
                                                 <Font size="14.0" />
                                             </font>
                                         </Label>
-                                        <TextField prefHeight="35.0" prefWidth="550.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000; -fx-border-width: 1; -fx-border-radius: 3; -fx-background-radius: 3;" text="Carlos Mendoza">
+                                        <TextField prefHeight="35.0" prefWidth="550.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #3D5C4A; -fx-border-width: 1; -fx-border-radius: 3; -fx-background-radius: 3;" text="Carlos Mendoza">
                                             <font>
                                                 <Font size="14.0" />
                                             </font>
@@ -118,12 +114,12 @@
                                 <!-- Email -->
                                 <VBox spacing="5.0">
                                     <children>
-                                        <Label style="-fx-text-fill: #000000; -fx-font-weight: bold;" text="Email">
+                                        <Label style="-fx-text-fill: #3D5C4A; -fx-font-weight: bold;" text="Email">
                                             <font>
                                                 <Font size="14.0" />
                                             </font>
                                         </Label>
-                                        <TextField prefHeight="35.0" prefWidth="550.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000; -fx-border-width: 1; -fx-border-radius: 3; -fx-background-radius: 3;" text="carlos.mendoza@cafeteria.com">
+                                        <TextField prefHeight="35.0" prefWidth="550.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #3D5C4A; -fx-border-width: 1; -fx-border-radius: 3; -fx-background-radius: 3;" text="carlos.mendoza@cafeteria.com">
                                             <font>
                                                 <Font size="14.0" />
                                             </font>
@@ -134,12 +130,12 @@
                                 <!-- Teléfono -->
                                 <VBox spacing="5.0">
                                     <children>
-                                        <Label style="-fx-text-fill: #000000; -fx-font-weight: bold;" text="Teléfono">
+                                        <Label style="-fx-text-fill: #3D5C4A; -fx-font-weight: bold;" text="Teléfono">
                                             <font>
                                                 <Font size="14.0" />
                                             </font>
                                         </Label>
-                                        <TextField prefHeight="35.0" prefWidth="550.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000; -fx-border-width: 1; -fx-border-radius: 3; -fx-background-radius: 3;" text="+1 (555) 123-4567">
+                                        <TextField prefHeight="35.0" prefWidth="550.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #3D5C4A; -fx-border-width: 1; -fx-border-radius: 3; -fx-background-radius: 3;" text="+1 (555) 123-4567">
                                             <font>
                                                 <Font size="14.0" />
                                             </font>
@@ -150,12 +146,12 @@
                                 <!-- Posición -->
                                 <VBox spacing="5.0">
                                     <children>
-                                        <Label style="-fx-text-fill: #000000; -fx-font-weight: bold;" text="Posición">
+                                        <Label style="-fx-text-fill: #3D5C4A; -fx-font-weight: bold;" text="Posición">
                                             <font>
                                                 <Font size="14.0" />
                                             </font>
                                         </Label>
-                                        <TextField prefHeight="35.0" prefWidth="550.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000; -fx-border-width: 1; -fx-border-radius: 3; -fx-background-radius: 3;" text="Mesero Senior">
+                                        <TextField prefHeight="35.0" prefWidth="550.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #3D5C4A; -fx-border-width: 1; -fx-border-radius: 3; -fx-background-radius: 3;" text="Mesero Senior">
                                             <font>
                                                 <Font size="14.0" />
                                             </font>
@@ -166,12 +162,12 @@
                                 <!-- Turno de Trabajo -->
                                 <VBox spacing="5.0">
                                     <children>
-                                        <Label style="-fx-text-fill: #000000; -fx-font-weight: bold;" text="Turno de Trabajo">
+                                        <Label style="-fx-text-fill: #3D5C4A; -fx-font-weight: bold;" text="Turno de Trabajo">
                                             <font>
                                                 <Font size="14.0" />
                                             </font>
                                         </Label>
-                                        <TextField prefHeight="35.0" prefWidth="550.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #000000; -fx-border-width: 1; -fx-border-radius: 3; -fx-background-radius: 3;" text="Mañana (6:00 AM - 2:00 PM)">
+                                        <TextField prefHeight="35.0" prefWidth="550.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #3D5C4A; -fx-border-width: 1; -fx-border-radius: 3; -fx-background-radius: 3;" text="Mañana (6:00 AM - 2:00 PM)">
                                             <font>
                                                 <Font size="14.0" />
                                             </font>

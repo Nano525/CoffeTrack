@@ -38,7 +38,7 @@
                     </VBox.margin>
                 </Label>
 
-                <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="210.0" style="-fx-background-color: #556B2F; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 8;" text="Bebidas Calientes">
+                <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="210.0" style="-fx-background-color: #D3D3D3; -fx-text-fill: #696969; -fx-font-weight: bold; -fx-background-radius: 8;" text="Bebidas Calientes">
                     <font>
                         <Font size="14.0" />
                     </font>
@@ -54,7 +54,7 @@
                         <Font size="14.0" />
                     </font>
                 </Button>
-                <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="210.0" style="-fx-background-color: #228B22; -fx-text-fill: #FFFFFF; -fx-font-weight: bold; -fx-background-radius: 8;" text="Snacks">
+                <Button mnemonicParsing="false" prefHeight="45.0" prefWidth="210.0" style="-fx-background-color: #D3D3D3; -fx-text-fill: #696969; -fx-font-weight: bold; -fx-background-radius: 8;" text="Snacks">
                     <font>
                         <Font size="14.0" />
                     </font>

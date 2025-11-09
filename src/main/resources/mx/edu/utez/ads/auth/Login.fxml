@@ -7,12 +7,12 @@
 
 <AnchorPane prefHeight="400.0"
             prefWidth="600.0"
-            style="-fx-background-color: FCF6E8;"
+            style="-fx-background-color: #E6F3F0;"
             xmlns="http://javafx.com/javafx/17.0.12"
             xmlns:fx="http://javafx.com/fxml/1"
             fx:controller="mx.edu.utez.ads.controllers.auth.LoginController">
    <children>
-      <Pane layoutX="35.0" layoutY="40.0" prefHeight="320.0" prefWidth="527.0" style="-fx-border-color: #4f4a46;              -fx-border-width: 1px;">
+      <Pane layoutX="35.0" layoutY="40.0" prefHeight="320.0" prefWidth="527.0" style="-fx-border-color: #3D5C4A;              -fx-border-width: 1px;">
          <children>
             <ImageView fitHeight="314.0" fitWidth="313.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -26,7 +26,7 @@
             </ImageView>
             <VBox alignment="CENTER" layoutX="307.0" layoutY="95.0" prefHeight="172.0" prefWidth="167.0">
                <children>
-                  <Label alignment="CENTER" prefHeight="15.0" prefWidth="179.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #4f4a46;" text="Inicio de sesión" />
+                  <Label alignment="CENTER" prefHeight="15.0" prefWidth="179.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #3D5C4A;" text="Inicio de sesión" />
                   <Label />
                   <TextField promptText="Correo electronico">
                      <opaqueInsets>
@@ -35,7 +35,7 @@
                   <Label />
                   <PasswordField promptText="Contraseña" />
                   <Label />
-                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #577A31; -fx-text-fill: white; -fx-font-weight: bold" text="Iniciar sesion" />
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #556B2F; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Iniciar sesion" />
                </children>
             </VBox>
          </children></Pane>
