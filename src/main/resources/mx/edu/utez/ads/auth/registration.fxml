@@ -5,8 +5,8 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E6F3F0;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.edu.utez.ads.auth.RegistrationController">
-    <Pane layoutX="35.0" layoutY="40.0" prefHeight="320.0" prefWidth="527.0" style="-fx-border-color: #3D5C4A; -fx-border-width: 1px;">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E6F3F0;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.edu.utez.ads.controllers.auth.RegistrationController">
+    <Pane layoutX="35.0" layoutY="40.0" prefHeight="355.0" prefWidth="527.0" style="-fx-border-color: #3D5C4A; -fx-border-width: 1px;">
         <ImageView fitHeight="314.0" fitWidth="313.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../assets/Login.jpg" />
@@ -20,34 +20,40 @@
         <VBox alignment="TOP_CENTER" layoutX="287.0" layoutY="66.0" prefHeight="349.0" prefWidth="208.0">
             <Label alignment="TOP_CENTER" prefHeight="15.0" prefWidth="179.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #3D5C4A;" text="Registrar" />
             <Label />
-            <TextField promptText="Nombre completo">
+            <TextField fx:id="fullName" promptText="Nombre completo">
                 <opaqueInsets>
                     <Insets />
                 </opaqueInsets></TextField>
          <Label prefHeight="0.0" prefWidth="16.0" />
-            <TextField promptText="Correo electronico">
+            <TextField fx:id="email" promptText="Correo electronico">
                 <opaqueInsets>
                     <Insets />
                 </opaqueInsets></TextField>
             <Label prefHeight="0.0" prefWidth="16.0" />
-            <TextField promptText="Nombre de usuario">
+            <TextField fx:id="userName" promptText="Nombre de usuario">
                 <opaqueInsets>
                     <Insets />
                 </opaqueInsets></TextField>
-         <Label />
+            <Label prefHeight="0.0" prefWidth="16.0" />
+            <PasswordField fx:id="password" promptText="Contraseña" />
+            <Label prefHeight="0.0" prefWidth="16.0" />
          <HBox prefHeight="26.0" prefWidth="208.0">
             <children>
-               <SplitMenuButton mnemonicParsing="false" prefHeight="26.0" prefWidth="138.0" text="Rol">
+               <SplitMenuButton fx:id="rolMenuButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="138.0" text="Rol">
                  <items>
                    <MenuItem mnemonicParsing="false" text="Mesero" />
                    <MenuItem mnemonicParsing="false" text="Cocinero" />
                      <MenuItem mnemonicParsing="false" text="Administrador" />
                  </items>
                </SplitMenuButton>
-               <TextField />
+               <TextField fx:id="userRol" visible="false" />
             </children></HBox>
          <Label />
-            <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #556B2F; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Registro" />
+         <HBox alignment="CENTER" spacing="10" prefHeight="26.0" prefWidth="208.0">
+            <children>
+               <Button fx:id="OnRegistro" alignment="CENTER" mnemonicParsing="false" onAction="#OnRegistro" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #556B2F; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Registro" />
+               <Button fx:id="OnRegresar" alignment="CENTER" mnemonicParsing="false" onAction="#OnRegresar" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #556B2F; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Regresar" />
+            </children></HBox>
         </VBox>
     </Pane>
 </AnchorPane>

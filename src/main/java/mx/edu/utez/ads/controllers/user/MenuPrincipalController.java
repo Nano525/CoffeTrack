@@ -3,13 +3,14 @@ package mx.edu.utez.ads.controllers.user;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import mx.edu.utez.ads.utils.WindowUtils;
 
-public class MenPrinCociController {
+public class MenuPrincipalController {
 
     @FXML private Button btnPedidosActuales;
     @FXML private Button btnPedidosListos;
     @FXML private Button btnPedidosCancelados;
-    @FXML private Button btnSalir;
+    @FXML private Button onSalir;
 
     @FXML
     private void initialize() {
@@ -39,7 +40,6 @@ public class MenPrinCociController {
 
     @FXML
     private void onSalir() {
-        Stage stage = (Stage) btnSalir.getScene().getWindow();
-        stage.close();
+        WindowUtils.switchWindow(onSalir, "/mx/edu/utez/ads/auth/Login.fxml", "Inicio de sesion");
     }
 }

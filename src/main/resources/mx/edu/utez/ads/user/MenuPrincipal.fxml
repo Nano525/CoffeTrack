@@ -4,7 +4,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane prefHeight="500" prefWidth="800" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.edu.utez.ads.controllers.user.MenPrinCociController">
+<BorderPane prefHeight="500" prefWidth="800" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.edu.utez.ads.controllers.user.MenuPrincipalController">
 
     <!-- ENCABEZADO -->
     <top>
@@ -39,7 +39,7 @@
                <HBox alignment="CENTER_RIGHT" spacing="10">
                   <children>
                       <Label style="-fx-font-size: 18px;" text="☕" />
-                      <Button fx:id="btnSalir" onAction="#onSalir" prefWidth="80" style="-fx-background-color: #4b2c0a;                                -fx-text-fill: white;                                -fx-font-weight: bold;                                -fx-background-radius: 5;" text="Salir" />
+                      <Button fx:id="onSalir" onAction="#onSalir" prefWidth="80" style="-fx-background-color: #4b2c0a;                                -fx-text-fill: white;                                -fx-font-weight: bold;                                -fx-background-radius: 5;" text="Salir" />
                   </children>
                </HBox>
            </children>

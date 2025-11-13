@@ -1,4 +1,4 @@
-package mx.edu.utez.ads.modelo.dao;
+package mx.edu.utez.ads.modelo;
 
 public class Modelo {
 }

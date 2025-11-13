@@ -5,12 +5,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0"
-            prefWidth="600.0"
-            style="-fx-background-color: #E6F3F0;"
-            xmlns="http://javafx.com/javafx/17.0.12"
-            xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="mx.edu.utez.ads.controllers.auth.LoginController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E6F3F0;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mx.edu.utez.ads.controllers.auth.LoginController">
    <children>
       <Pane layoutX="35.0" layoutY="40.0" prefHeight="320.0" prefWidth="527.0" style="-fx-border-color: #3D5C4A;              -fx-border-width: 1px;">
          <children>
@@ -28,14 +23,19 @@
                <children>
                   <Label alignment="CENTER" prefHeight="15.0" prefWidth="179.0" style="-fx-font-size: 15px; -fx-font-weight: bold; -fx-text-fill: #3D5C4A;" text="Inicio de sesión" />
                   <Label />
-                  <TextField promptText="Correo electronico">
+                  <TextField fx:id="email" promptText="Correo electronico">
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets></TextField>
                   <Label />
-                  <PasswordField promptText="Contraseña" />
+                  <PasswordField fx:id="password" promptText="Contraseña" />
                   <Label />
-                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #556B2F; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Iniciar sesion" />
+                  <Button fx:id="OnLoginButtonClicked" alignment="CENTER" mnemonicParsing="false" onAction="#OnLoginButtonClicked" prefHeight="26.0" prefWidth="99.0" style="-fx-background-color: #556B2F; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Iniciar sesion" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                         <Label alignment="CENTER" style="-fx-text-fill: #757575; -fx-font-size: 12px;" text="¿No tienes cuenta?" />
+                        <Hyperlink fx:id="OnRegisterButton" onAction="#OnRegisterButton" text="Registrate" />
+                     </children></VBox>
                </children>
             </VBox>
          </children></Pane>
